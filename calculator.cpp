@@ -2,20 +2,30 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int add(int num1, int num2) {
+template<nametype t>
+t add(t num1, t num2) {
   return num1 + num2;
 }
-int div(int num1, int num2) {
+template<nametype d>
+d div(d num1, d num2) 
+{
+  if(num2<=0)
+  {
+    cout<<"Division not possible : Denomiator = "; 
+    return 0;
+  }
   return num1 / num2;
 }
-
-int multiply(int num1, int num2) {
+template<nametype x>
+x multiply(x num1, x num2) 
+{
    return num1 * num2;
 }
 
-int main() {
+int main() 
+{
   
-  int num1, num2;
+  float num1, num2;
   
   cout << "Enter first number: ";
   cin >> num1;
